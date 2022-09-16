@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='mrtrix3',
       version='py-0.0.1',
@@ -7,7 +7,7 @@ setup(name='mrtrix3',
       author='Daan Christiaens',
       author_email='daan.christiaens@kcl.ac.uk',
       license='MPL',
-      packages=['mrtrix3'],
+      packages=find_packages(),
       install_requires=['numpy'],
       zip_safe=False)
 
